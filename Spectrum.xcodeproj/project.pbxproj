@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9805006A20DC77AF0049F00C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805006920DC77AF0049F00C /* AppDelegate.swift */; };
+		9805006C20DC77AF0049F00C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805006B20DC77AF0049F00C /* ViewController.swift */; };
+		9805006F20DC77AF0049F00C /* Spectrum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9805006D20DC77AF0049F00C /* Spectrum.xcdatamodeld */; };
+		9805007120DC77B00049F00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9805007020DC77B00049F00C /* Assets.xcassets */; };
+		9805007420DC77B00049F00C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9805007220DC77B00049F00C /* Main.storyboard */; };
+		9805008020DC77B10049F00C /* SpectrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805007F20DC77B10049F00C /* SpectrumTests.swift */; };
+		9805008B20DC77B10049F00C /* SpectrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805008A20DC77B10049F00C /* SpectrumUITests.swift */; };
+		9805009920DC7A6A0049F00C /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805009820DC7A6A0049F00C /* DropView.swift */; };
+		9805009B20DC7E1B0049F00C /* PixelProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805009A20DC7E1B0049F00C /* PixelProcess.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9805007C20DC77B10049F00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9805005E20DC77AF0049F00C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9805006520DC77AF0049F00C;
+			remoteInfo = Spectrum;
+		};
+		9805008720DC77B10049F00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9805005E20DC77AF0049F00C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9805006520DC77AF0049F00C;
+			remoteInfo = Spectrum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9805006620DC77AF0049F00C /* Spectrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805006920DC77AF0049F00C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9805006B20DC77AF0049F00C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9805006E20DC77AF0049F00C /* Spectrum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Spectrum.xcdatamodel; sourceTree = "<group>"; };
+		9805007020DC77B00049F00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9805007320DC77B00049F00C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9805007520DC77B00049F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9805007620DC77B00049F00C /* Spectrum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spectrum.entitlements; sourceTree = "<group>"; };
+		9805007B20DC77B10049F00C /* SpectrumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectrumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805007F20DC77B10049F00C /* SpectrumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumTests.swift; sourceTree = "<group>"; };
+		9805008120DC77B10049F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9805008620DC77B10049F00C /* SpectrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectrumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805008A20DC77B10049F00C /* SpectrumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumUITests.swift; sourceTree = "<group>"; };
+		9805008C20DC77B10049F00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9805009820DC7A6A0049F00C /* DropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
+		9805009A20DC7E1B0049F00C /* PixelProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelProcess.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9805006320DC77AF0049F00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805007820DC77B10049F00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805008320DC77B10049F00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9805005D20DC77AF0049F00C = {
+			isa = PBXGroup;
+			children = (
+				9805006820DC77AF0049F00C /* Spectrum */,
+				9805007E20DC77B10049F00C /* SpectrumTests */,
+				9805008920DC77B10049F00C /* SpectrumUITests */,
+				9805006720DC77AF0049F00C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9805006720DC77AF0049F00C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9805006620DC77AF0049F00C /* Spectrum.app */,
+				9805007B20DC77B10049F00C /* SpectrumTests.xctest */,
+				9805008620DC77B10049F00C /* SpectrumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9805006820DC77AF0049F00C /* Spectrum */ = {
+			isa = PBXGroup;
+			children = (
+				9805006920DC77AF0049F00C /* AppDelegate.swift */,
+				9805006B20DC77AF0049F00C /* ViewController.swift */,
+				9805009A20DC7E1B0049F00C /* PixelProcess.swift */,
+				9805009820DC7A6A0049F00C /* DropView.swift */,
+				9805007020DC77B00049F00C /* Assets.xcassets */,
+				9805007220DC77B00049F00C /* Main.storyboard */,
+				9805007520DC77B00049F00C /* Info.plist */,
+				9805007620DC77B00049F00C /* Spectrum.entitlements */,
+				9805006D20DC77AF0049F00C /* Spectrum.xcdatamodeld */,
+			);
+			path = Spectrum;
+			sourceTree = "<group>";
+		};
+		9805007E20DC77B10049F00C /* SpectrumTests */ = {
+			isa = PBXGroup;
+			children = (
+				9805007F20DC77B10049F00C /* SpectrumTests.swift */,
+				9805008120DC77B10049F00C /* Info.plist */,
+			);
+			path = SpectrumTests;
+			sourceTree = "<group>";
+		};
+		9805008920DC77B10049F00C /* SpectrumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9805008A20DC77B10049F00C /* SpectrumUITests.swift */,
+				9805008C20DC77B10049F00C /* Info.plist */,
+			);
+			path = SpectrumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9805006520DC77AF0049F00C /* Spectrum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805008F20DC77B10049F00C /* Build configuration list for PBXNativeTarget "Spectrum" */;
+			buildPhases = (
+				9805006220DC77AF0049F00C /* Sources */,
+				9805006320DC77AF0049F00C /* Frameworks */,
+				9805006420DC77AF0049F00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectrum;
+			productName = Spectrum;
+			productReference = 9805006620DC77AF0049F00C /* Spectrum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9805007A20DC77B10049F00C /* SpectrumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805009220DC77B10049F00C /* Build configuration list for PBXNativeTarget "SpectrumTests" */;
+			buildPhases = (
+				9805007720DC77B10049F00C /* Sources */,
+				9805007820DC77B10049F00C /* Frameworks */,
+				9805007920DC77B10049F00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9805007D20DC77B10049F00C /* PBXTargetDependency */,
+			);
+			name = SpectrumTests;
+			productName = SpectrumTests;
+			productReference = 9805007B20DC77B10049F00C /* SpectrumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9805008520DC77B10049F00C /* SpectrumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9805009520DC77B10049F00C /* Build configuration list for PBXNativeTarget "SpectrumUITests" */;
+			buildPhases = (
+				9805008220DC77B10049F00C /* Sources */,
+				9805008320DC77B10049F00C /* Frameworks */,
+				9805008420DC77B10049F00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9805008820DC77B10049F00C /* PBXTargetDependency */,
+			);
+			name = SpectrumUITests;
+			productName = SpectrumUITests;
+			productReference = 9805008620DC77B10049F00C /* SpectrumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9805005E20DC77AF0049F00C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Eli Byers";
+				TargetAttributes = {
+					9805006520DC77AF0049F00C = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9805007A20DC77B10049F00C = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9805006520DC77AF0049F00C;
+					};
+					9805008520DC77B10049F00C = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9805006520DC77AF0049F00C;
+					};
+				};
+			};
+			buildConfigurationList = 9805006120DC77AF0049F00C /* Build configuration list for PBXProject "Spectrum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9805005D20DC77AF0049F00C;
+			productRefGroup = 9805006720DC77AF0049F00C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9805006520DC77AF0049F00C /* Spectrum */,
+				9805007A20DC77B10049F00C /* SpectrumTests */,
+				9805008520DC77B10049F00C /* SpectrumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9805006420DC77AF0049F00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9805007120DC77B00049F00C /* Assets.xcassets in Resources */,
+				9805007420DC77B00049F00C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805007920DC77B10049F00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805008420DC77B10049F00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9805006220DC77AF0049F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9805006F20DC77AF0049F00C /* Spectrum.xcdatamodeld in Sources */,
+				9805009920DC7A6A0049F00C /* DropView.swift in Sources */,
+				9805009B20DC7E1B0049F00C /* PixelProcess.swift in Sources */,
+				9805006C20DC77AF0049F00C /* ViewController.swift in Sources */,
+				9805006A20DC77AF0049F00C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805007720DC77B10049F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9805008020DC77B10049F00C /* SpectrumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9805008220DC77B10049F00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9805008B20DC77B10049F00C /* SpectrumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9805007D20DC77B10049F00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9805006520DC77AF0049F00C /* Spectrum */;
+			targetProxy = 9805007C20DC77B10049F00C /* PBXContainerItemProxy */;
+		};
+		9805008820DC77B10049F00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9805006520DC77AF0049F00C /* Spectrum */;
+			targetProxy = 9805008720DC77B10049F00C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9805007220DC77B00049F00C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9805007320DC77B00049F00C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9805008D20DC77B10049F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9805008E20DC77B10049F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9805009020DC77B10049F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spectrum/Spectrum.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = Spectrum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.Spectrum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9805009120DC77B10049F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spectrum/Spectrum.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = Spectrum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.Spectrum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9805009320DC77B10049F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = SpectrumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.SpectrumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectrum.app/Contents/MacOS/Spectrum";
+			};
+			name = Debug;
+		};
+		9805009420DC77B10049F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = SpectrumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.SpectrumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectrum.app/Contents/MacOS/Spectrum";
+			};
+			name = Release;
+		};
+		9805009620DC77B10049F00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = SpectrumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.SpectrumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Spectrum;
+			};
+			name = Debug;
+		};
+		9805009720DC77B10049F00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 24S3R988NC;
+				INFOPLIST_FILE = SpectrumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elibyers.SpectrumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Spectrum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9805006120DC77AF0049F00C /* Build configuration list for PBXProject "Spectrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805008D20DC77B10049F00C /* Debug */,
+				9805008E20DC77B10049F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9805008F20DC77B10049F00C /* Build configuration list for PBXNativeTarget "Spectrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805009020DC77B10049F00C /* Debug */,
+				9805009120DC77B10049F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9805009220DC77B10049F00C /* Build configuration list for PBXNativeTarget "SpectrumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805009320DC77B10049F00C /* Debug */,
+				9805009420DC77B10049F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9805009520DC77B10049F00C /* Build configuration list for PBXNativeTarget "SpectrumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9805009620DC77B10049F00C /* Debug */,
+				9805009720DC77B10049F00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9805006D20DC77AF0049F00C /* Spectrum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9805006E20DC77AF0049F00C /* Spectrum.xcdatamodel */,
+			);
+			currentVersion = 9805006E20DC77AF0049F00C /* Spectrum.xcdatamodel */;
+			path = Spectrum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9805005E20DC77AF0049F00C /* Project object */;
+}
