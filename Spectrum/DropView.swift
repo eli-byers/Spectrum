@@ -8,18 +8,23 @@
 
 import Cocoa
 
-class DropView: NSView {
+protocol DropViewDelegate: class {
+    func fileDropped(at path: String)
+}
+
+class DropView: NSImageView {
+    
+    var delegate: DropViewDelegate?
     
     var filePath: String?
-    let expectedExt = ["kext"]  //file extensions allowed for Drag&Drop (example: "jpg","png","docx", etc..)
+    let expectedExt = ["mov", "mp4", "mkv"]
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         self.wantsLayer = true
-        self.layer?.backgroundColor = NSColor.gray.cgColor
         
-        registerForDraggedTypes([NSPasteboard.PasteboardType.URL, NSPasteboard.PasteboardType.fileURL])
+        registerForDraggedTypes([.URL, .fileURL])
     }
     
     override func draw(_ dirtyRect: NSRect) {
@@ -29,7 +34,7 @@ class DropView: NSView {
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         if checkExtension(sender) == true {
-            self.layer?.backgroundColor = NSColor.blue.cgColor
+            self.layer?.backgroundColor = NSColor.gray.cgColor
             return .copy
         } else {
             return NSDragOperation()
@@ -51,21 +56,19 @@ class DropView: NSView {
     }
     
     override func draggingExited(_ sender: NSDraggingInfo?) {
-        self.layer?.backgroundColor = NSColor.gray.cgColor
+        self.layer?.backgroundColor = NSColor.clear.cgColor
     }
     
     override func draggingEnded(_ sender: NSDraggingInfo) {
-        self.layer?.backgroundColor = NSColor.gray.cgColor
+        self.layer?.backgroundColor = NSColor.clear.cgColor
     }
     
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         guard let pasteboard = sender.draggingPasteboard().propertyList(forType: NSPasteboard.PasteboardType(rawValue: "NSFilenamesPboardType")) as? NSArray,
             let path = pasteboard[0] as? String
-            else { return false }
+        else { return false }
         
-        //GET YOUR FILE PATH !!!
-        self.filePath = path
-        Swift.print("FilePath: \(path)")
+        delegate?.fileDropped(at: path)
         
         return true
     }

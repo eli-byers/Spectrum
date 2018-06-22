@@ -6,18 +6,20 @@
 //  Copyright © 2018 Eli Byers. All rights reserved.
 //
 
+//    common aspect ratios
+//    4:3
+//    16:9
+
 import Cocoa
 
 class ViewController: NSViewController {
 
-//    common aspect ratios
-//    4:3
-//    16:9
+    
+    @IBOutlet weak var dropView: DropView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        dropView.delegate = self
     }
 
     override var representedObject: Any? {
@@ -26,6 +28,13 @@ class ViewController: NSViewController {
         }
     }
 
+}
 
+extension ViewController: DropViewDelegate {
+    
+    func fileDropped(at path: String) {
+        <#code#>
+    }
+    
 }
 

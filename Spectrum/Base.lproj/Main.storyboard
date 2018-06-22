@@ -748,7 +748,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-5W-jeq">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-5W-jeq" customClass="DropView" customModule="Spectrum" customModuleProvider="target">
                                 <rect key="frame" x="17" y="17" width="556" height="315"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="P3J-5W-jeq" secondAttribute="height" multiplier="16:9" id="0rA-zr-MCL"/>
@@ -773,6 +773,9 @@
                             <constraint firstItem="Xrd-di-VAH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="p6i-lG-XLp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dropView" destination="P3J-5W-jeq" id="o17-P3-U7U"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="212" y="882.5"/>
